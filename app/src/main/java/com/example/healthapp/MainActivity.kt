@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         var tab_viewpager = findViewById<ViewPager>(R.id.viewPager)
         var tab_tablayout = findViewById<TabLayout>(R.id.tabbyCat)
 
