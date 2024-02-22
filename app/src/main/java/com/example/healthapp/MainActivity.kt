@@ -2,14 +2,15 @@ package com.example.healthapp
 
 
 import android.os.Bundle
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-
-
+import android.util.SparseBooleanArray
+import android.widget.ArrayAdapter
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         // If we dont use setupWithViewPager() method then
         // tabs are not used or shown when activity opened
         tab_tablayout.setupWithViewPager(tab_viewpager)
+
+
     }
 
     private fun setupViewPager(viewpager: ViewPager) {
@@ -35,6 +38,8 @@ class MainActivity : AppCompatActivity() {
         // is a title of tab
         adapter.addFragment(TextFragment(), "Text")
         adapter.addFragment(ChoicesFragment(), "Choices")
+        adapter.addFragment(TodoFragment(), "Todo")
+        adapter.addFragment(ProfileFragment(), "Profile")
 
         // setting adapter to view pager.
         viewpager.setAdapter(adapter)
@@ -71,6 +76,9 @@ class MainActivity : AppCompatActivity() {
             fragmentList1.add(fragment)
             fragmentTitleList1.add(title)
         }
+
     }
+
+
 
 }
