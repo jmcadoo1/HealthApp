@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">HealthApp</string>
-    <string name="text">Text</string>
+    <string name="scroll_text">Text\n\n
+        This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n
+    This is going to be too much text to show...\n\n\n\n\n</string>
 </resources>
