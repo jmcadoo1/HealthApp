@@ -11,6 +11,11 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import android.util.SparseBooleanArray
 import android.widget.ArrayAdapter
+import android.app.Activity
+import android.view.View
+import android.widget.ImageButton
+import android.widget.Toast
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +33,15 @@ class MainActivity : AppCompatActivity() {
         // tabs are not used or shown when activity opened
         tab_tablayout.setupWithViewPager(tab_viewpager)
 
+        // based on https://abhiandroid.com/ui/imagebutton#gsc.tab=0
+
+        // initiate view's
+        val profileButton = findViewById<ImageButton>(R.id.image) // how do we put the right layout?
+
+        // perform click event on button's
+        profileButton.setOnClickListener {
+            Toast.makeText(applicationContext, "Warning! Do not click on profile image.", Toast.LENGTH_LONG).show() // display the toast on home button click
+        }
 
     }
 
