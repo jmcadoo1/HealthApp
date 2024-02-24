@@ -15,5 +15,17 @@
     This is going to be too much text to show...\n\n\n\n\n</string>
     <string name="text">Text</string>
     <string name="text2">Text</string>
+    <string name="choice">Choice</string>
+    <string name="todo">To Do</string>
+    <string name="new_entry">new entry...</string>
+    <string name="add">add</string>
+    <string name="profile">Profile</string>
+    <string name="name">Smiley J Smile</string>
+    <string name="smiley_j_smile">Smiley J. Smile</string>
+    <string name="lower_right">Lower Right</string>
+    <string name="downhere">Down Here</string>
+    <string name="hello">Hello There</string>
+    <string name="colors">Colors</string>
+    <string name="hi">Hi Again</string>
 
 </resources>

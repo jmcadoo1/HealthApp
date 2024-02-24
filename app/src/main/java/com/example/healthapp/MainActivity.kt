@@ -33,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         // tabs are not used or shown when activity opened
         tab_tablayout.setupWithViewPager(tab_viewpager)
 
+
+
+        // Code for warning message for profile pic to work:
+
         // based on https://abhiandroid.com/ui/imagebutton#gsc.tab=0
 
         // initiate view's
@@ -40,7 +44,9 @@ class MainActivity : AppCompatActivity() {
 
         // perform click event on button's
         profileButton.setOnClickListener {
-            Toast.makeText(applicationContext, "Warning! Do not click on profile image.", Toast.LENGTH_LONG).show() // display the toast on home button click
+            Toast.makeText(applicationContext,
+                "Warning! Do not click on profile image.",
+                Toast.LENGTH_LONG).show() // display the toast on home button click
         }
 
     }
