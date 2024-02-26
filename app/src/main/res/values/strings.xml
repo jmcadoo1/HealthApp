@@ -20,8 +20,10 @@
     <string name="new_entry">new entry...</string>
     <string name="add">add</string>
     <string name="profile">Profile</string>
-    <string name="name">Smiley J Smile</string>
+    <string name="name"><b>Smiley J. Smile</b></string>
     <string name="smiley_j_smile">Smiley J. Smile</string>
+    <string name="warning"><b>Warning!</b> Do not click on the profile image.</string>
+    <string name="x">×</string>
     <string name="lower_right">Lower Right</string>
     <string name="downhere">Down Here</string>
     <string name="hello">Hello There</string>
