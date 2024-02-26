@@ -30,5 +30,7 @@
     <string name="hello">Hello There</string>
     <string name="colors">Colors</string>
     <string name="hi">Hi Again</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
 
 </resources>
