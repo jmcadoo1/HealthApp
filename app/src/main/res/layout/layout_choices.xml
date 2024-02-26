@@ -29,12 +29,12 @@
 
         <RadioGroup
             android:id="@+id/radioGroup4"
-            android:layout_width="74dp"
-            android:layout_height="84dp"
+            android:layout_width="97dp"
+            android:layout_height="77dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="81dp"
-            android:layout_marginEnd="337dp"
+            android:layout_marginEnd="314dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.047"
@@ -44,15 +44,17 @@
 
             <RadioButton
                 android:id="@+id/redRadioButton"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:checked="true"
+                android:buttonTint="@android:color/darker_gray"
                 android:text="Red" />
 
             <RadioButton
                 android:id="@+id/blueRadioButton"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:buttonTint="@android:color/darker_gray"
                 android:text="Blue" />
 
         </RadioGroup>
