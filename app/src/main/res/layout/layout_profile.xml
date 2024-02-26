@@ -45,30 +45,30 @@
             android:id="@+id/linlayout"
             android:layout_width="400dp"
             android:layout_height="50dp"
-            android:layout_below="@+id/name"
-            android:gravity="center"
+            android:layout_below="@id/textView"
             android:background="@android:color/holo_red_light"
-            android:visibility="invisible"
-            android:orientation="horizontal" >
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
 
             <TextView
                 android:id="@+id/warning"
                 android:layout_width="300dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:textSize="15sp"
+                android:text="@string/warning"
                 android:textColor="@android:color/white"
-                android:text="@string/warning" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/closenotif"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:textSize="18sp"
-                android:textColor="@android:color/white"
                 android:clickable="true"
-                android:text="@string/x" />
+                android:text="@string/x"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
         </LinearLayout>
         
