@@ -37,16 +37,24 @@ class MainActivity : AppCompatActivity() {
 
         // Code for warning message for profile pic to work:
 
-        // based on https://abhiandroid.com/ui/imagebutton#gsc.tab=0
+        // The below code will not work without switching to "layout_profile" as the layout, 
+        // however this conflicts with the above setup of "activity_main" as the layout.
+        // Presumably code to switch tabs/layouts will fix this issue.
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.layout_profile)
 
         // initiate view's
         val profileButton = findViewById<ImageButton>(R.id.image) // how do we put the right layout?
+        val linearLayout = findViewById<LinearLayout>(R.id.linlayout)
+        val closeNotif = findViewById<TextView>(R.id.closenotif)
 
         // perform click event on button's
         profileButton.setOnClickListener {
-            Toast.makeText(applicationContext,
-                "Warning! Do not click on profile image.",
-                Toast.LENGTH_LONG).show() // display the toast on home button click
+            linearLayout.setVisibility(View.VISIBLE)
+        }
+
+        closeNotif.setOnClickListener {
+            linearLayout.setVisibility(View.INVISIBLE)
         }
 
     }
