@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">HealthApp</string>
-    <string name="scroll_text">Text\n\n\n
+    <string name="scroll_text">\n\n\n
         This is going to be too much text to show...\n\n\n\n\n
     This is going to be too much text to show...\n\n\n\n\n
     This is going to be too much text to show...\n\n\n\n\n
@@ -12,7 +12,8 @@
     This is going to be too much text to show...\n\n\n\n\n
     This is going to be too much text to show...\n\n\n\n\n
     This is going to be too much text to show...\n\n\n\n\n
-    This is going to be too much text to show...\n\n\n\n\n</string>
+    This is going to be too much text to show...\n\n\n\n\n
+    This is the end of the text, stop scrolling!</string>
     <string name="text">Text</string>
     <string name="text2">Text</string>
     <string name="choice">Choice</string>

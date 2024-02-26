@@ -21,7 +21,8 @@
             android:padding="10dp"
             android:text="@string/colors"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="invisible" />
 
         <TextView
             android:layout_width="match_parent"

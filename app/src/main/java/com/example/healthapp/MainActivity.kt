@@ -6,6 +6,7 @@ import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+//import kotlinx.android.synthetic.main.activity_main.*
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
@@ -15,6 +16,8 @@ import android.app.Activity
 import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
+import android.widget.LinearLayout
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,28 +37,31 @@ class MainActivity : AppCompatActivity() {
         tab_tablayout.setupWithViewPager(tab_viewpager)
 
 
+          // Moved this code into profileFragment and modified it
+          // to work from our activity_main tabs. Didn't feel comfortable
+          // with straight up deleting it so left this msg instead
 
-        // Code for warning message for profile pic to work:
-
-        // The below code will not work without switching to "layout_profile" as the layout, 
-        // however this conflicts with the above setup of "activity_main" as the layout.
-        // Presumably code to switch tabs/layouts will fix this issue.
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_profile)
-
-        // initiate view's
-        val profileButton = findViewById<ImageButton>(R.id.image) // how do we put the right layout?
-        val linearLayout = findViewById<LinearLayout>(R.id.linlayout)
-        val closeNotif = findViewById<TextView>(R.id.closenotif)
-
-        // perform click event on button's
-        profileButton.setOnClickListener {
-            linearLayout.setVisibility(View.VISIBLE)
-        }
-
-        closeNotif.setOnClickListener {
-            linearLayout.setVisibility(View.INVISIBLE)
-        }
+//        // Code for warning message for profile pic to work:
+//
+//        // The below code will not work without switching to "layout_profile" as the layout,
+//        // however this conflicts with the above setup of "activity_main" as the layout.
+//        // Presumably code to switch tabs/layouts will fix this issue.
+//        //super.onCreate(savedInstanceState); think should only be called once at astart of kt
+//        setContentView(R.layout.layout_profile)
+//
+//        // initiate view's
+//        val profileButton = findViewById<ImageButton>(R.id.image) // how do we put the right layout?
+//        val linearLayout = findViewById<LinearLayout>(R.id.linlayout)
+//        val closeNotif = findViewById<TextView>(R.id.closenotif)
+//
+//        // perform click event on button's
+//        profileButton.setOnClickListener {
+//            linearLayout.setVisibility(View.VISIBLE)
+//        }
+//
+//        closeNotif.setOnClickListener {
+//            linearLayout.setVisibility(View.INVISIBLE)
+//        }
 
     }
 
@@ -111,12 +117,9 @@ class MainActivity : AppCompatActivity() {
 
 
 
-// code below is for getting checklist/selection for todo list
-//    import androidx.appcompat.app.AppCompatActivity
-//    import android.os.Bundle
-//    import android.util.SparseBooleanArray
-//    import android.widget.ArrayAdapter
-//    import kotlinx.android.synthetic.main.activity_main.*
+// code below is for getting checklist/selection for todo_list
+    
+
 //    class MainActivity : AppCompatActivity() {
 //        override fun onCreate(savedInstanceState: Bundle?) {
 //            super.onCreate(savedInstanceState)
@@ -161,7 +164,7 @@ class MainActivity : AppCompatActivity() {
 //                adapter.notifyDataSetChanged()
 //            }
 //        }
-//    }
-
-
 }
+
+
+

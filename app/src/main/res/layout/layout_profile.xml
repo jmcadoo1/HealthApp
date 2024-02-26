@@ -19,7 +19,8 @@
             android:gravity="start"
             android:padding="10dp"
             android:text="@string/profile"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:visibility="invisible" />
 
         <ImageButton
             android:id="@+id/image"
