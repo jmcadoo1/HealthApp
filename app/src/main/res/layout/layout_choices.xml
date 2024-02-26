@@ -4,27 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choices" />
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+            android:text="Choices"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="61dp"
             android:text="Hat color to place on Player One's head:" />
 
         <RadioGroup
-            android:id = "@+id/radioGroup4"
+            android:id="@+id/radioGroup4"
             android:layout_width="74dp"
             android:layout_height="84dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="337dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.047"
@@ -51,19 +61,31 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="161dp"
+            android:layout_marginBottom="551dp"
             android:text="Hat color to place on Player Two's head:" />
+
         <Spinner
-            xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/mySpinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/color_options"/>
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="181dp"
+            android:entries="@array/color_options" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="213dp"
+            android:layout_marginBottom="470dp"
             android:text="Show choices!" />
 
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
