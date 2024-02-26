@@ -60,6 +60,8 @@ class MainActivity : AppCompatActivity() {
         adapter.addFragment(ChoicesFragment(), "Choices")
         adapter.addFragment(TodoFragment(), "Todo")
         adapter.addFragment(ProfileFragment(), "Profile")
+        adapter.addFragment(ColorsFragment(), "Colors")
+        adapter.addFragment(LowerRightFragment(), "LowerRight")
 
         // setting adapter to view pager.
         viewpager.setAdapter(adapter)
@@ -101,7 +103,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//
+// code below is for getting checklist/selection for todo list
 //    import androidx.appcompat.app.AppCompatActivity
 //    import android.os.Bundle
 //    import android.util.SparseBooleanArray
