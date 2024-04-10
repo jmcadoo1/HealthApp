@@ -5,45 +5,148 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/idRLContainer"
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="start"
-            android:padding="10dp"
-            android:text="@string/todo"
+            android:text="@string/enter_exercise"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView"
+            android:text="@string/search" />
+
+        <TextView
+            android:id="@+id/servingView"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/editSearch"
+            android:text="@string/time"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editSearch"
+            android:layout_toEndOf="@+id/servingView"
+            android:spinnerMode="dropdown"
+            android:entries="@array/time_entries"/>
+
+
+        <TextView
+            android:id="@+id/mealView"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="@string/cals"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:visibility="invisible" />
+            android:layout_below="@id/servingView" />
+
 
         <EditText
-            android:id="@+id/editText"
-            android:layout_below="@id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/new_entry"
-            android:layout_alignParentStart="true"
-            android:layout_toStartOf="@+id/add"/>
+            android:id="@+id/calsBurned"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/spinner"
+            android:layout_toEndOf="@+id/mealView"
+            android:scrollbars="vertical"/>
 
         <Button
             android:id="@+id/add"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/textView"
-            android:layout_above="@+id/listView" />
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="28sp"
+            android:layout_below="@+id/mealView"
+            android:text="@string/log_item" />
 
-        <ListView
-            android:id="@+id/listView"
-            android:layout_width="wrap_content"
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editText"
-            android:choiceMode="multipleChoice"/>
+            android:layout_below="@+id/add"
+            android:text="@string/today"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/plan"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_below="@id/add"
+            android:layout_toEndOf="@id/textView2"
+            android:text="@string/my_exercise_plan" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:id="@+id/table"
+            android:layout_below="@id/plan"
+            android:layout_marginTop="10dp">
+            <TableRow>
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Exercise"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Duration"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text="Calories Burned"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/totals"
+            android:layout_below="@id/table"
+            android:layout_marginTop="10dp">
+            <TableRow>
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Total"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
